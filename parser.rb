@@ -86,33 +86,7 @@ module XMLRPC
     end
 
     def self.dateTime(str)
-      case str
-      when /^(-?\d\d\d\d)-?(\d\d)-?(\d\d)T(\d\d):(\d\d):(\d\d)(?:Z|([+-])(\d\d):?(\d\d))?$/
-        a = [$1, $2, $3, $4, $5, $6].collect{|i| i.to_i}
-        if $7
-          ofs = $8.to_i*3600 + $9.to_i*60
-          ofs = -ofs if $7=='+'
-          utc = Time.utc(*a) + ofs
-          a = [ utc.year, utc.month, utc.day, utc.hour, utc.min, utc.sec ]
-        end
-        XMLRPC::DateTime.new(*a)
-      when /^(-?\d\d)-?(\d\d)-?(\d\d)T(\d\d):(\d\d):(\d\d)(Z|([+-]\d\d):(\d\d))?$/
-        a = [$1, $2, $3, $4, $5, $6].collect{|i| i.to_i}
-        if a[0] < 70
-          a[0] += 2000
-        else
-          a[0] += 1900
-        end
-        if $7
-          ofs = $8.to_i*3600 + $9.to_i*60
-          ofs = -ofs if $7=='+'
-          utc = Time.utc(*a) + ofs
-          a = [ utc.year, utc.month, utc.day, utc.hour, utc.min, utc.sec ]
-        end
-        XMLRPC::DateTime.new(*a)
-      else
-        raise "wrong dateTime.iso8601 format " + str
-      end
+      Object::DateTime.parse(str)
     end
 
     def self.base64(str)
