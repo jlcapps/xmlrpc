@@ -2,5 +2,5 @@ There's probably some really great reason that xmlrpc has it's own datetime
 parser? But it won't parse the time stamps I'm getting from a Zope database,
 and DateTime will. So.
 
-And while I'm sure it's infinitely sensible to not allow nils by default, I
+And while I'm sure it's infinitely sensible not to allow nils by default, I
 need them. And I'm tired of looking at the warnings. So.
