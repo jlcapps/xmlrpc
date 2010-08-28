@@ -19,8 +19,8 @@ module XMLRPC
     DEFAULT_PARSER = XMLParser::REXMLStreamParser
 
     # enable <nil/> tag
-    ENABLE_NIL_CREATE    = false
-    ENABLE_NIL_PARSER    = false
+    ENABLE_NIL_CREATE    = true
+    ENABLE_NIL_PARSER    = true
     
     # allows integers greater than 32-bit if true
     ENABLE_BIGINT        = false
