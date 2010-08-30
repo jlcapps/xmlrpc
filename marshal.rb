@@ -6,10 +6,11 @@
 # $Id: marshal.rb 11708 2007-02-12 23:01:19Z shyouhei $
 #
 
-require "../xmlrpc/parser"
-require "../xmlrpc/create"
-require "../xmlrpc/config"
-require "../xmlrpc/utils"
+$LOAD_PATH.unshift File.expand_path(File.join(File.dirname(__FILE__), "..", "xmlrpc"))
+require "parser"
+require "create"
+require "config"
+require "utils"
 
 module XMLRPC
 

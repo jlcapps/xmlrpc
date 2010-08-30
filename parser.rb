@@ -6,10 +6,10 @@
 # $Id: parser.rb 13771 2007-10-24 23:04:42Z jeg2 $
 #
 
-
+$LOAD_PATH.unshift File.expand_path(File.join(File.dirname(__FILE__), "..", "xmlrpc"))
 require "date"
-require "../xmlrpc/base64"
-require "../xmlrpc/datetime"
+require "base64"
+require "datetime"
 
 
 # add some methods to NQXML::Node

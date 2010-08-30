@@ -6,8 +6,9 @@
 # $Id: create.rb 11818 2007-02-23 03:45:55Z knu $
 #
 
+$LOAD_PATH.unshift File.expand_path(File.join(File.dirname(__FILE__), "..", "xmlrpc"))
 require "date"
-require "../xmlrpc/base64"
+require "base64"
 
 module XMLRPC
 

@@ -273,11 +273,11 @@ Note: Inherited methods from class (({Object})) cannot be used as XML-RPC names,
 =end
 
 
-
-require "../xmlrpc/parser"
-require "../xmlrpc/create"
-require "../xmlrpc/config"
-require "../xmlrpc/utils"     # ParserWriterChooseMixin
+$LOAD_PATH.unshift File.expand_path(File.join(File.dirname(__FILE__), "..", "xmlrpc"))
+require "parser"
+require "create"
+require "config"
+require "utils"     # ParserWriterChooseMixin
 require "net/http"
 
 module XMLRPC
