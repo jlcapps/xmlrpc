@@ -6,10 +6,10 @@
 # $Id: marshal.rb 11708 2007-02-12 23:01:19Z shyouhei $
 #
 
-require "xmlrpc/parser"
-require "xmlrpc/create"
-require "xmlrpc/config"
-require "xmlrpc/utils"
+require "../xmlrpc/parser"
+require "../xmlrpc/create"
+require "../xmlrpc/config"
+require "../xmlrpc/utils"
 
 module XMLRPC
 

@@ -8,8 +8,8 @@
 
 
 require "date"
-require "xmlrpc/base64"
-require "xmlrpc/datetime"
+require "../xmlrpc/base64"
+require "../xmlrpc/datetime"
 
 
 # add some methods to NQXML::Node

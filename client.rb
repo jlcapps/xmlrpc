@@ -274,10 +274,10 @@ Note: Inherited methods from class (({Object})) cannot be used as XML-RPC names,
 
 
 
-require "xmlrpc/parser"
-require "xmlrpc/create"
-require "xmlrpc/config"
-require "xmlrpc/utils"     # ParserWriterChooseMixin
+require "../xmlrpc/parser"
+require "../xmlrpc/create"
+require "../xmlrpc/config"
+require "../xmlrpc/utils"     # ParserWriterChooseMixin
 require "net/http"
 
 module XMLRPC

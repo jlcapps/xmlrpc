@@ -7,7 +7,7 @@
 #
 
 require "date"
-require "xmlrpc/base64"
+require "../xmlrpc/base64"
 
 module XMLRPC
 

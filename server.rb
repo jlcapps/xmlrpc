@@ -142,10 +142,10 @@ the same class.
 
 
 
-require "xmlrpc/parser"
-require "xmlrpc/create"
-require "xmlrpc/config"
-require "xmlrpc/utils"         # ParserWriterChooseMixin
+require "../xmlrpc/parser"
+require "../xmlrpc/create"
+require "../xmlrpc/config"
+require "../xmlrpc/utils"         # ParserWriterChooseMixin
 
 
 
